@@ -10,5 +10,12 @@ Here are some examples:
 Inspired by
 
  * [JSBin](http://jsbin.com/)
+ * [JSFiddle](http://jsfiddle.net/)
  * [Livecoding.io](http://livecoding.io/)
  * [Tributary.io](http://tributary.io/)
+
+The goal of this project is to provide a usable live coding environment for the Web. Features include:
+
+ * Sharing - you can send a link to your program or embed it using an iFrame.
+ * Good debugging support - syntax errors and exceptions resolve to the correct line of code in the Chrome debugger.
+ * No iFrame magic - purely re-evaluating the code when text is changed

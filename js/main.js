@@ -1,14 +1,17 @@
 define(['codeMirror', 'inlet', 'underscore'],
     function(CodeMirror, Inlet, _){
-  var codeMirror = CodeMirror.fromTextArea(editor);
+  //var codeMirror = CodeMirror.fromTextArea(editor);
+  var codeMirror = CodeMirror(editorContainer);
   codeMirror.setOption('mode', 'javascript');
   codeMirror.setSize('100%', '100%');
   Inlet(codeMirror);
 
   var exec = _.throttle(function(){
-    var text = codeMirror.getValue();
-    window.location.hash = encodeURIComponent(text);
+    var text = codeMirror.getValue(),
+        uriText = encodeURIComponent(text);
+    window.location.hash = uriText;
     evalByAppendingScript(text);
+    runLink.setAttribute('href', 'run.html#' + uriText);
   }, 30);
 
   /**

@@ -24,13 +24,17 @@
       width: 60%;
       height: 100%;
     }
+    #runLink {
+      position: fixed;
+      top: 0%;
+      left: 36%;
+    }
   </style>
 </head>
 <body>
-  <div id="editorContainer">
-    <textarea id="editor"></textarea>
-  </div>
+  <div id="editorContainer"></div>
   <div style="background-color:lightgray" id="div"></div>
+  <a id="runLink">run</a>
   <script src='requireConfig.js'></script>
   <script data-main="js/main.js" src='//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js'></script>
 </body>
