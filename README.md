@@ -14,6 +14,7 @@ Inspired by
  * [JSFiddle](http://jsfiddle.net/)
  * [Livecoding.io](http://livecoding.io/)
  * [Tributary.io](http://tributary.io/)
+ * [CodePen](http://codepen.io/)
 
 The goal of this project is to provide a usable live coding environment for the Web. Features include:
 
