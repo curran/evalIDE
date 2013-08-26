@@ -21,3 +21,5 @@ The goal of this project is to provide a usable live coding environment for the 
  * Sharing - you can send a link to your program or embed it using an iFrame.
  * Good debugging support - syntax errors and exceptions resolve to the correct line of code in the Chrome debugger.
  * No iFrame magic - purely re-evaluating the code when text is changed
+
+MIT License.
